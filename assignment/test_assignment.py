@@ -1,9 +1,9 @@
 from gradescope_utils.autograder_utils.decorators import weight
 import unittest
 import importlib
-# import assignment
-# import subdir1
-# importlib.reload(assignment)
+import assignment
+import subdir1
+importlib.reload(assignment)
 
 # This makes the import statements in assignment.py import into the current namespace.
 exec(open('assignment/assignment.py').read())
